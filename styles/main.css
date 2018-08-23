@@ -272,7 +272,7 @@ h4, .h4 {
 
 
 
-/* Medium Screen Typography - Scale: 1.333 Perfect Fourth (thanks http://type-scale.com/)  */
+/* Medium Screen Typography  */
 
 @media screen and (min-width: 42em) {
 
@@ -307,7 +307,7 @@ h4, .h4 {
 }
 
 
-/* Large Screen Typography  - Scale: 1.414 Augmented Fourth (thanks http://type-scale.com/)  */
+/* Large Screen Typography   */
 
 @media screen and (min-width: 72em) {
 	h1 { 

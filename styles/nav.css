@@ -278,13 +278,13 @@ input#menu[type="checkbox"] {
   0% {
     display: none;
     opacity: 0;
-  }
+ }
   50% {
     display: block;
     opacity: 0.5;
-  }
+ }
   100% {
     opacity: 1
-  }
+ }
 	
 }
