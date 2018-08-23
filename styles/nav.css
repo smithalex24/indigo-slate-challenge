@@ -97,6 +97,9 @@
 	background-color:#4E78A0;
 	transform: scale(1.1);
 }
+a.logotype {
+	animation: none;
+}
 
 
 .menu-dropdown li .icon {
@@ -107,7 +110,9 @@
 	color: #fff;
 }
 
-
+.menu-dropdown a {
+	transform: scale(1.1);
+}
 
 .menu label {
   margin-bottom: 0;
