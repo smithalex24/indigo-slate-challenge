@@ -3,104 +3,130 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Indigo Slate Coding Challenge</title>
+	<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
 	<link rel = "stylesheet" href = "style.css">
 </head>
 
 <body>
+		
+<div class="primary-nav">
 
-<div class = "navbar" id = "nav">
-	<h3>Welcome back Donovan!</h3>
-	<ul class = "navmenu">
-		<li class = "nav-item"><a href = "#" class = "active">My Schedule & Bidding</a>
-			<ul>
-				<li class = "nav-item"><a href = "#">Test Item</a></li>
-				<li class = "nav-item"><a href = "#">Test Item</a></li>
-				<li class = "nav-item"><a href = "#">Test Item >></a>
-					<ul>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
+	<button href="#" class="hamburger open-panel nav-toggle">
+		<span class="screen-reader-text">Menu</span>
+		</button>
+			<nav role="navigation" class="menu">
+				<a href="#" class="logotype"><span>Hello </span>Alex!</a>
+				<div class="overflow-container">
+					<ul class="menu-dropdown">
+						<li><a href="#">Dashboard</a>
+							<span class="icon">
+								<i class="fa fa-dashboard">
+								</i>
+							</span>
+						</li>
+						<li class="menu-hasdropdown">
+							<a href="#">Settings</a><span class="icon"><i class="fa fa-gear"></i></span>
+
+							<label title="toggle menu" for="settings">
+		        <span class="downarrow"><i class="fa fa-caret-down"></i></span>
+		      </label>
+							<input type="checkbox" class="sub-menu-checkbox" id="settings" />
+
+							<ul class="sub-menu-dropdown">
+								<li><a href="">Profile</a></li>
+								<li><a href="">Security</a></li>
+								<li><a href="">Account</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">Favourites</a><span class="icon"><i class="fa fa-heart"></i></span></li>
+
+						<li><a href="#">Messages</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+
 					</ul>
-				</li>
-			</ul>
-		</li>
-		<li class = "nav-item"><a href = "#">Safety</a>
-			<ul>
-				<li class = "nav-item"><a href = "#">Reporting >></a>
-					<ul>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item </a>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-					</ul>
-				</li>
-				<li class = "nav-item"><a href = "#">Agriculture and Customs >></a>
-					<ul>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item </a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-					</ul>
-				</li>
-				<li class = "nav-item"><a href = "#">Known Crewmember</a>
-				<li class = "nav-item"><a href = "#">Product Safety Data Search</a>
-			</ul>
-		</li>
-		<li class = "nav-item"><a href = "#">Training</a></li>
-		<li class = "nav-item"><a href = "#">Administration>></a>
-			<ul>
-				<li class = "nav-item"><a href = "#">OJI and Leaves>></a>
-					<ul>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item </a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-					</ul>
-				</li>
-				<li class = "nav-item"><a href = "#">Pay and Benefits >></a>
-					<ul>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item </a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-					</ul>
-				</li>
-				<li class = "nav-item"><a href = "#">Performance >></a>
-					<ul>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item </a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-					</ul>
-				</li>
-				<li class = "nav-item"><a href = "#">Inflight Resource Directory</a></li>
-				<li class = "nav-item"><a href = "#">Mobile and Web >></a>
-					<ul>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-						<li class = "nav-item"><a href = "#">Test Item </a></li>
-						<li class = "nav-item"><a href = "#">Test Item</a></li>
-					</ul>
-				</li>
-				<li class = "nav-item"><a href = "#">AFA</a></li>
-			</ul>
-		</li>
-		<li class = "nav-item"><a href = "#">Catering & Brand >></a>
-			<ul>
-				<li class = "nav-item"><a href = "#">Test Item</a></li>
-				<li class = "nav-item"><a href = "#">Test Item</a></li>
-				<li class = "nav-item"><a href = "#">Test Item </a></li>
-				<li class = "nav-item"><a href = "#">Test Item</a></li>
-			</ul>
-		</li>
-		<li class = "nav-item"><a href = "#">Hotels</a>
-		<li class = "nav-item"><a href = "#">My Base</a>
-		<li class = "nav-item"><a href = "#">Recognition</a>
-		<li class = "nav-item"><a href = "#">My Leadership Team</a>
-	</ul>
-</div>
+
+				</div>
+
+			</nav>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+			<!--  -->
+			<!-- <li class = "nav-item"><a href = "#">Safety</a>
+				<ul class = "nav-dropdown1">
+					<li class = "nav-item"><a href = "#">Reporting >></a>
+						<ul class = "nav-dropdown2">
+							<li class = "nav-item"><a href = "#">Test Item</a></li>
+						</ul>
+					</li>
+					<li class = "nav-item"><a href = "#">Agriculture and Customs >></a>
+						<ul class = "nav-dropdown2">
+							<li class = "nav-item"><a href = "#">Test Item</a></li>
+						</ul>
+					</li>
+					<li class = "nav-item"><a href = "#">Known Crewmember</a>
+					<li class = "nav-item"><a href = "#">Product Safety Data Search</a>
+				</ul>
+			</li>
+			<li class = "nav-item"><a href = "#">Training</a></li>
+			<li class = "nav-item"><a href = "#">Administration>></a>
+				<ul class = "nav-dropdown1">
+					<li class = "nav-item"><a href = "#">OJI and Leaves>></a>
+						<ul class = "nav-dropdown2">
+							<li class = "nav-item"><a href = "#">Test Item</a></li>	
+						</ul>
+					</li>
+					<li class = "nav-item"><a href = "#">Pay and Benefits >></a>
+						<ul class = "nav-dropdown2">
+							<li class = "nav-item"><a href = "#">Test Item</a></li>
+						</ul>
+					</li>
+					<li class = "nav-item"><a href = "#">Performance >></a>
+						<ul class = "nav-dropdown2">
+							<li class = "nav-item"><a href = "#">Test Item</a></li>
+							<li class = "nav-item"><a href = "#">Test Item</a></li>
+							<li class = "nav-item"><a href = "#">Test Item </a></li>
+							<li class = "nav-item"><a href = "#">Test Item</a></li>
+						</ul>
+					</li>
+					<li class = "nav-item"><a href = "#">Inflight Resource Directory</a></li>
+					<li class = "nav-item"><a href = "#">Mobile and Web >></a>
+						<ul class = "nav-dropdown">
+							<li class = "nav-item"><a href = "#">Test Item</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class = "nav-item"><a href = "#">Catering & Brand >></a>
+				<ul class = "nav-dropdown">
+					<li class = "nav-item"><a href = "#">Test Item</a></li>
+					
+				</ul>
+			</li>
+			<li class = "nav-item"><a href = "#">AFA</a></li>
+		</ul>
+	</li>
+</nav> -->
+	
 			
+	
 
 
 
@@ -135,8 +161,7 @@
 
 
 
-
-
-<script src = "app.js"></script>
+		
+        <script src = "app.js"></script>
 </body>
 </html>
