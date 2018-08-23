@@ -9,7 +9,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|M+PLUS+Rounded+1c" rel="stylesheet">
 	<link rel = "stylesheet" href = "style.css">
 </head>
 
@@ -19,43 +19,79 @@
 
 	<button href="#" class="hamburger open-panel nav-toggle">
 		<span class="screen-reader-text">Menu</span>
-		</button>
-			<nav role="navigation" class="menu">
-				<a href="#" class="logotype"><span>Hello </span>Alex!</a>
-				<div class="overflow-container">
-					<ul class="menu-dropdown">
-						<li><a href="#">Dashboard</a>
-							<span class="icon">
-								<i class="fa fa-dashboard">
-								</i>
-							</span>
+	</button>
+		<nav role="navigation" class="menu">
+			<a href="#" class="logotype"><img src = "./images/Alaska-Airlines-Logo.png"></a>
+			<div class="overflow-container">
+				<ul class="menu-dropdown">
+					<li class="menu-hasdropdown">
+						<a href="#">My Schedule & Bidding</a>
+							<label title="toggle menu" for="schedule">
+	        					<span class="downarrow"><i class="fa fa-caret-down"></i></span>
+	     					 </label>
+							<input type="checkbox" class="sub-menu-checkbox" id="schedule" />
+								<ul class="sub-menu-dropdown">
+								<li><a href="">Test Item</a></li>
+								<li><a href="">Test Item</a></li>
+								<li><a href="">Test Item</a></li>
+							</ul>
 						</li>
-						<li class="menu-hasdropdown">
-							<a href="#">Settings</a><span class="icon"><i class="fa fa-gear"></i></span>
-
+					<li class="menu-hasdropdown">
+						<a href="#">Safety</a>
 							<label title="toggle menu" for="settings">
-		        <span class="downarrow"><i class="fa fa-caret-down"></i></span>
-		      </label>
-							<input type="checkbox" class="sub-menu-checkbox" id="settings" />
-
+	        					<span class="downarrow"><i class="fa fa-caret-down"></i></span>
+	     					 </label>
+						<input type="checkbox" class="sub-menu-checkbox" id="settings" />
 							<ul class="sub-menu-dropdown">
-								<li><a href="">Profile</a></li>
-								<li><a href="">Security</a></li>
-								<li><a href="">Account</a></li>
+							<li class="menu-hasdropdown">
+								<a href="">Reporting</a>
+								<label title="toggle menu" for="reporting">
+	        					<span class="downarrow"><i class="fa fa-caret-down"></i></span>
+	     					 </label>
+							<input type="checkbox" class="sub-menu-checkbox" id="reporting" />
+								<ul class="sub-menu-dropdown2">
+								<li><a href="">Test Item</a></li>
+								<li><a href="">Test Item</a></li>
+								<li><a href="">Test Item</a></li>
 							</ul>
 						</li>
 
-						<li><a href="#">Favourites</a><span class="icon"><i class="fa fa-heart"></i></span></li>
 
-						<li><a href="#">Messages</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
+							<li><a href="">Agriculture and Customs</a></li>
+							<li><a href="">Known Crewmember</a></li>
+							<li><a href="">Product Safety Data Search</a></li>
+						</ul>
+					</li>
 
-					</ul>
+					<li><a href="#">Favourites</a><span class="icon"><i class="fa fa-heart"></i></span></li>
 
-				</div>
+					<li><a href="#">Messages</a><span class="icon"><i class="fa fa-envelope"></i></span></li>
 
-			</nav>
+				</ul>
+
+			</div>
+
+		</nav>
 
 		</div>
+
+		<div class = "jumbotron">
+			<h1>Welcome back Alex.</h1>
+			<h2>How can we help?</h2>
+		</div>
+
+		<div class = "container">
+			<div class = "col-sm-12">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class = "col-sm-12">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class = "col-sm-12">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
 
 
 

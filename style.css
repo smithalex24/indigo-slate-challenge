@@ -1,7 +1,8 @@
 body {
-  font-family: 'Julius Sans One', sans-serif;
+ font-family: 'M PLUS Rounded 1c', sans-serif;
   margin: 0;
-  background-color: #236B8E;
+  background-color: gray;
+  
 }
 
 /* Layout */
@@ -17,22 +18,55 @@ body {
   max-width: 55em;
   margin: 0 auto;
 }
-
-#header {
-  padding: 1.5em;
-  margin: 0 0 1em 0;
-  background-color: #eee;
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/plane.jpeg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  animation: fadeIn;
+  animation-duration: 5s;
 }
 
-#footer {
-  padding: 1.5em;
-  margin: 2em 0 0 0;
-  background-color: #eee;
-
+.jumbotron h1 {
+	font-size: 70px;
+	color: white;
+	opacity: .7;
+	text-align: center;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+    -ms-animation: fadein 5s; /* Internet Explorer */
+    -o-animation: fadein 5s; /* Opera < 12.1 */
+    animation: fadein 5s;
+}
+.jumbotron h2 {
+	font-size: 50px;
+	color: white;
+	opacity: .6;
+	text-align: center;
+	-webkit-animation: fadein 7; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 7; /* Firefox < 16 */
+    -ms-animation: fadein 7; /* Internet Explorer */
+    -o-animation: fadein 7s; /* Opera < 12.1 */
+    animation: fadein 7s;
+    
+}
+p {
+	text-align: center;
+}
+.col-sm-12 {
+	margin: 10px;
+}
+img {
+	height: 50px;
+	width: 70px;
+	margin-left: 30px;
 }
 
 
-/* Menu Styles */
+
+/* Menu Styling */
 
 .primary-nav {
 	position: fixed;
@@ -41,6 +75,7 @@ body {
 
 .menu {
 	position: relative;
+	height: 1000px;
 }
 
 .menu ul {
@@ -81,9 +116,9 @@ body {
 .openNav .hamburger:before {
 	content:"\2715"; /* close icon */
 	display: block;
-  color: #000;
-  line-height: 32px;
-  font-size: 16px;
+  	color: #000;
+  	line-height: 32px;
+  	font-size: 16px;
 }
 
 .hamburger:hover:before {
@@ -99,9 +134,9 @@ body {
 	top: 12px;
 	right: 10px;
 	pointer-events: none;
-  width: 24px;
-  height: 24px;
-  color: #fff;
+  	width: 24px;
+  	height: 24px;
+  	color: #fff;
 }
 
 .menu,
@@ -128,7 +163,7 @@ body {
 }
 
 .menu-dropdown li .icon {
-	color: #777;
+	display: none;
 }
 
 .menu-dropdown li:hover .icon {
@@ -156,11 +191,12 @@ input#menu[type="checkbox"] {
 
 
 
-
-
-
 .sub-menu-dropdown {
 	display: none;
+}
+.sub-menu-dropdown2 {
+	display: none;
+	background-color: #00688B;
 }
 
 .new-wrapper {
@@ -172,17 +208,21 @@ input#menu[type="checkbox"] {
 
 #menu:checked + ul.menu-dropdown {
     
-		left: 0;
+	left: 0;
     -webkit-animation: all .45s cubic-bezier(0.77, 0, 0.175, 1);
-            animation: all .45s cubic-bezier(0.77, 0, 0.175, 1);
+     animation: all .45s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .sub-menu-checkbox:checked + ul.sub-menu-dropdown {
     display: block!important;
     -webkit-animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
-            animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
 }
-
+.sub-menu-checkbox:checked + ul.sub-menu-dropdown2 {
+    display: block!important;
+    -webkit-animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: grow .45s cubic-bezier(0.77, 0, 0.175, 1);
+}
 
 .openNav .new-wrapper {
   position: absolute;
@@ -195,7 +235,7 @@ input#menu[type="checkbox"] {
 .downarrow {
   background: transparent;
 	position: absolute;
-	right: 50px;
+	right: 0;
 	top: 12px;
   color: #777;
   width: 24px;
@@ -212,10 +252,10 @@ input#menu[type="checkbox"] {
 	position: absolute;
 	display: block;
 	left: -200px;
-  top: 0;
-	width: 250px;
-  transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
-  background-color: #000;
+  	top: 0;
+	width: 280px;
+  	transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+ 	background-color: black;
 	z-index: 999;
 }
 
@@ -267,32 +307,15 @@ input#menu[type="checkbox"] {
 .openNav .menu:hover {
 	position: absolute;
 	left: -200px;
-	top 73px;
+	top:73px;
 }
 
 .openNav .menu {
-  top 73px;
-		transform: translate3d(200px, 0, 0);
+  	top :73px;
+	transform: translate3d(200px, 0, 0);
     transition: transform .45s cubic-bezier(0.77, 0, 0.175, 1);
 }
 	
-	/* label.hamburger {
-		display: none;
-	} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* look and feel only, not needed for core menu*/
 
 @-webkit-keyframes grow {
 	
@@ -327,7 +350,16 @@ input#menu[type="checkbox"] {
 }
 
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 
 
